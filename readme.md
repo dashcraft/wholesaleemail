@@ -7,3 +7,5 @@
 - `config.codekit` can be ignored
 
 The template is based off of Scott's templates we are using for all the other emails. Everything should be in order. If you have any questions please email me [stewart.hines@apmex.com](mailto:stewart.hines@apmex.com) and I will answer them. Thanks!
+
+**Click *Clone Or Download* in the top right corner to download.**
