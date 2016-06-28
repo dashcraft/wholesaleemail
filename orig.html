@@ -1,0 +1,858 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="format-detection" content="telephone=no" />
+  <!-- disable auto telephone linking in iOS -->
+  <title></title>
+  <style type="text/css">
+      html {
+      background-color: #E1E1E1;
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    #bodyTable,
+    #bodyCell,
+    #bodyCell {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table[id=bodyTable] {
+      width: 100%!important;
+      margin: auto;
+      max-width: 500px!important;
+      color: #7A7A7A;
+      font-weight: normal;
+    }
+
+    img,
+    a img {
+      border: 0;
+      outline: none;
+      text-decoration: none;
+      height: auto;
+      line-height: 100%;
+    }
+
+    a {
+      text-decoration: none !important;
+      border-bottom: 1px solid;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #5F5F5F;
+      font-weight: normal;
+      font-family: Helvetica;
+      font-size: 20px;
+      line-height: 125%;
+      text-align: Left;
+      letter-spacing: normal;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 10px;
+      margin-left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .ReadMsgBody {
+      width: 100%;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+    /* Force Hotmail/Outlook.com to display emails at full width. */
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+    /* Force Hotmail/Outlook.com to display line heights normally. */
+
+    table,
+    td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    /* Remove spacing between tables in Outlook 2007 and up. */
+
+    #outlook a {
+      padding: 0;
+    }
+    /* Force Outlook 2007 and up to provide a "view in browser" message. */
+
+    img {
+      -ms-interpolation-mode: bicubic;
+      display: block;
+      outline: none;
+      text-decoration: none;
+    }
+    /* Force IE to smoothly render resized images. */
+
+    body,
+    table,
+    td,
+    p,
+    a,
+    li,
+    blockquote {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      font-weight: normal!important;
+    }
+    /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+
+    hr {
+      border-color: #ccc;
+    }
+
+    .ExternalClass td[class="ecxflexibleContainerBox"] h3 {
+      padding-top: 10px !important;
+    }
+    /* Force hotmail to push 2-grid sub headers down */
+
+    h1 {
+      display: block;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 100%;
+    }
+
+    h2 {
+      display: block;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 120%;
+    }
+
+    h3 {
+      display: block;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 110%;
+    }
+
+    h4 {
+      display: block;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: normal;
+      line-height: 100%;
+    }
+
+    .flexibleContainerCell {
+      padding: 12px 20px;
+    }
+
+    .flexibleImage {
+      height: auto;
+    }
+
+    .linkRemoveBorder {
+      border-bottom: 0 !important;
+    }
+
+    table[class=flexibleContainerCellDivider] {
+      padding-bottom: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    body,
+    #bodyTable {
+      background-color: #f0f0f0;
+    }
+
+    #emailHeader {
+      background-color: #f5f5f5;
+    }
+
+    #emailBody {
+      background-color: #FFFFFF;
+    }
+
+    #emailFooter {
+      background-color: #fff;
+    }
+
+    .nestedContainer {
+      background-color: #F8F8F8;
+      border: 1px solid #CCCCCC;
+    }
+
+    .emailButton {
+      background-color: #205478;
+      border-collapse: separate;
+    }
+
+    .buttonContent {
+      color: #FFFFFF;
+      font-family: Helvetica;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .buttonContent a {
+      color: #FFFFFF;
+      display: block;
+      text-decoration: none!important;
+      border: 0!important;
+    }
+
+    .emailCalendar {
+      background-color: #FFFFFF;
+      border: 1px solid #CCCCCC;
+    }
+
+    .emailCalendarMonth {
+      background-color: #205478;
+      color: #FFFFFF;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    .emailCalendarDay {
+      color: #205478;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .imageContentText {
+      margin-top: 10px;
+      line-height: 0;
+    }
+
+    .imageContentText a {
+      line-height: 0;
+    }
+
+    #invisibleIntroduction {
+      display: none !important;
+    }
+    /* Removing the introduction text from the view */
+
+    span[class=ios-color-hack] a {
+      color: #275100!important;
+      text-decoration: none!important;
+    }
+    /* Remove all link colors in IOS (below are duplicates based on the color preference) */
+
+    span[class=ios-color-hack2] a {
+      color: #205478!important;
+      text-decoration: none!important;
+    }
+
+    span[class=ios-color-hack3] a {
+      color: #8B8B8B!important;
+      text-decoration: none!important;
+    }
+
+    .a[href^="tel"],
+    a[href^="sms"] {
+      text-decoration: none!important;
+      color: #606060!important;
+      pointer-events: none!important;
+      cursor: default!important;
+    }
+
+    .mobile_link a[href^="tel"],
+    .mobile_link a[href^="sms"] {
+      text-decoration: none!important;
+      color: #606060!important;
+      pointer-events: auto!important;
+      cursor: default!important;
+    }
+
+    @media only screen and (max-width: 499px) {
+      body {
+        width: 100% !important;
+        min-width: 100% !important;
+      }
+      /* Force iOS Mail to render the email at full width. */
+      table[id="emailHeader"],
+      table[id="emailBody"],
+      table[id="emailFooter"],
+      table[class="flexibleContainer"],
+      td[class="flexibleContainerCell"] {
+        width: 100% !important;
+      }
+      td[class="flexibleContainerBox"],
+      td[class="flexibleContainerBox"] table {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+      td[class="imageContent"] img {
+        height: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      img[class="flexibleImage"] {
+        height: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto;
+      }
+      img[class="flexibleImageSmall"] {
+        height: auto !important;
+        width: auto !important;
+      }
+      table[class="flexibleContainerBoxNext"] {
+        padding-top: 10px !important;
+      }
+      table[class="emailButton"] {
+        width: 100% !important;
+      }
+      td[class="buttonContent"] {
+        padding: 0 !important;
+      }
+      td[class="buttonContent"] a {
+        padding: 15px !important;
+      }
+      .lockup {
+        width: 68% !important;
+      }
+      .desktop {
+        display: none !important;
+      }
+      .mobile {
+        display: block !important;
+      }
+    }
+
+    .desktop {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .lockup {
+      margin: 0 auto 8px 0;
+      position: relative;
+      color: #002539;
+      float: right;
+    }
+
+    .lockup div {
+      float: left;
+      position: relative;
+    }
+
+    .lockup span {
+      display: inline;
+    }
+
+    .lockup .left {
+      width: 90px;
+    }
+
+    .lockup .right {
+      width: 90px;
+    }
+
+    .clearfix:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+
+    .clearfix {
+      display: inline-block;
+    }
+
+    * html .clearfix {
+      height: 1%;
+    }
+
+    .clearfix {
+      display: block;
+    }
+    /*  CONDITIONS FOR ANDROID DEVICES ONLY
+            *   http://developer.android.com/guide/webapps/targeting.html
+            *   http://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/ ;
+            =====================================================*/
+
+    @media only screen and (-webkit-device-pixel-ratio:.75) {}
+
+    @media only screen and (-webkit-device-pixel-ratio:1) {}
+
+    @media only screen and (-webkit-device-pixel-ratio:1.5) {}
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {}
+      /* end IOS targeting */
+  </style>
+  <!--
+            Outlook Conditional CSS
+            These two style blocks target Outlook 2007 & 2010 specifically, forcing
+            columns into a single vertical stack as on mobile clients. This is
+            primarily done to avoid the 'page break bug' and is optional.
+            More information here:
+            http://templates.mailchimp.com/development/css/outlook-conditional-css
+        -->
+  <!--[if mso 12]>
+            <style type="text/css">
+                .flexibleContainer{display:block !important; width:100% !important;}
+            </style>
+        <![endif]-->
+  <!--[if mso 14]>
+            <style type="text/css">
+                .flexibleContainer{display:block !important; width:100% !important;}
+            </style>
+        <![endif]-->
+</head>
+
+<body bgcolor="#E1E1E1" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+  <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="table-layout: fixed;max-width:100% !important;width: 100% !important;min-width: 100% !important;">
+    <tr>
+      <td align="center" valign="top" id="bodyCell">
+        <table border="0" cellpadding="0" cellspacing="0" width="500" id="emailHeader">
+          <tr>
+            <td align="center" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="10" cellspacing="0" width="500" class="flexibleContainer">
+                      <tr>
+                        <td valign="top" width="500" class="flexibleContainerCell">
+                          <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="left" valign="middle" id="invisibleIntroduction" class="flexibleContainerBox" style="display:none !important;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
+                                  <tr>
+                                    <td align="left" class="textContent">
+                                      <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td align="right" valign="middle" class="flexibleContainerBox">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
+                                  <tr>
+                                    <td align="left" class="textContent">
+                                      <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:right;line-height:120%;">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="500" id="emailBody">
+          <tr class="header-logos" style="border-bottom:solid 1px #f0f0f0;">
+            <td>
+              <table border="0" cellpadding="30" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="center" style="padding:8px;">
+                    <a href="https://wholesale.apmex.com/"><img src="http://www.images-apmex.com/Content/images/dealer/logo.png" style="width: 309px;height:auto;margin-top:10px;margin-bottom:10px;" /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr style="border-bottom:solid 1px #f0f0f0;">
+            <td>
+              <table border="0" cellpadding="20" cellspacing="0" width="100%" bgcolor="#f9f9f9">
+                <tr>
+                  <td align="center" valign="center" style="padding:8px;">
+                    <a href="https://wholesale.apmex.com/dealersbid?type=pdf"><img src="http://www.images-apmex.com/Content/images/dealer/clickhere.png" style="width: 322px;height:auto;margin-top:5px;margin-bottom:5px;" /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr style="border-bottom:solid 1px #f0f0f0;">
+            <td align="center" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
+                      <tr>
+                        <td valign="top" width="500" class="flexibleContainerCell" style="padding-top:20px;">
+                          <table align="left" border="0" cellpadding="10" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="left" valign="center">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:210px;">
+                                  <tr>
+                                    <td align="center" class="textContent" style="text-align:center;">
+                                      <p style="font-size: 16px;color:#666;font-weight: bold;margin: 0;padding-bottom:1em;border-bottom:solid 1px #ccc;"><b>Bullion Sell Specials</b></p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td align="right" valign="center">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:210px;">
+                                  <tr>
+                                    <td align="center" class="textContent" style="text-align:center;">
+                                      <p style="font-size: 16px;color:#666;font-weight: bold;margin: 0;padding-bottom:1em;border-bottom:solid 1px #ccc;"><b>Urgent Needs</b></p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="center" class="flexibleContainerBox">
+                                <table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+                                  <tr>
+                                    <td align="center" class="textContent" style="text-align:center;">
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/93754" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/93754_Slab.jpg" width="175px;" alt="2016 1 oz Silver American Eagle BU" title="2016 1 oz Silver American Eagle BU" />
+                                              <p style="display: block;height:55px;">2016 1 oz Silver American Eagle BU</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $2.15</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/97880" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/97880_Obv.jpg" width="175px;" alt="2016 1 oz Silver Round - Buffalo" title="2016 1 oz Silver Round - Buffalo" />
+                                              <p style="display: block;height:55px;">2016 1 oz Silver Round - Buffalo</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $0.50</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/97883" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/97883_Obv.jpg" width="175px;" alt="1 oz Silver Bar - Buffalo" title="1 oz Silver Bar - Buffalo" />
+                                              <p style="display: block;height:55px;">1 oz Silver Bar - Buffalo</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $0.60</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/87659" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/87659_Slab.jpg" width="175px;" alt="1 oz Silver Round - Republic Metals Corporation (RMC)" title="1 oz Silver Round - Republic Metals Corporation (RMC)"
+                                              />
+                                              <p style="display: block;height:55px;">1 oz Silver Round - Republic Metals Corporation (RMC)</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $0.55</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/93743" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/93743_Slab.jpg" width="175px;" alt="2016 1 oz Gold American Eagle BU" title="2016 1 oz Gold American Eagle BU" />
+                                              <p style="display: block;height:55px;">2016 1 oz Gold American Eagle BU</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $42.75</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/93752" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/93752_Slab.jpg" width="175px;" alt="2016 1 oz Gold Buffalo BU" title="2016 1 oz Gold Buffalo BU" />
+                                              <p style="display: block;height:55px;">2016 1 oz Gold Buffalo BU</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $42.75</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/93747" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/93747_Slab.jpg" width="175px;" alt="2016 Canada 1 oz Gold Maple Leaf BU" title="2016 Canada 1 oz Gold Maple Leaf BU"
+                                              />
+                                              <p style="display: block;height:55px;">2016 Canada 1 oz Gold Maple Leaf BU</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $25.00</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/84704" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/84704_Slab.jpg" width="175px;" alt="1 oz Gold Bar - Republic Metals Corporation (In Assay)" title="1 oz Gold Bar - Republic Metals Corporation (In Assay)"
+                                              />
+                                              <p style="display: block;height:55px;">1 oz Gold Bar - Republic Metals Corporation (In Assay)</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $22.99</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td align="right" valign="center" class="flexibleContainerBox">
+                                <table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;position: relative;">
+                                  <tr width="100%">
+                                    <td align="center" class="textContent" style="text-align:center;">
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/52537" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/52537_Slab.jpg" width="175px;" alt="2008-W 4-Coin Proof Gold Buffalo Set (w/Box & COA)" title="2008-W 4-Coin Proof Gold Buffalo Set (w/Box & COA)"
+                                              />
+                                              <p style="display: block;height:55px;">2008-W 4-Coin Proof Gold Buffalo Set (w/Box & COA)</p>
+                                              <p style="color:#ff5033;margin-top:0;">$5000.00</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/54518" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/54518_Slab.jpg" width="175px;" alt="2008-W 4-Coin Gold Buffalo Set BU (w/Box & COA)" title="2008-W 4-Coin Gold Buffalo Set BU (w/Box & COA)"
+                                              />
+                                              <p style="display: block;height:55px;">2008-W 4-Coin Gold Buffalo Set BU (w/Box & COA)</p>
+                                              <p style="color:#ff5033;margin-top:0;">$4800.00</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/83506" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/83506_Slab.jpg" width="175px;" alt="1/10 oz Gold American Eagle MS-70 PCGS (Random Year)" title="1/10 oz Gold American Eagle MS-70 PCGS (Random Year)"
+                                              />
+                                              <p style="display: block;height:55px;">1/10 oz Gold American Eagle MS-70 PCGS (Random Year)</p>
+                                              <p style="color:#ff5033;margin-top:0;">Melt + $25.00</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/94010" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/94010_Slab.jpg" width="175px;" alt="2016 4-Coin Gold American Eagle Set MS-70 NGC (ER)" title="2016 4-Coin Gold American Eagle Set MS-70 NGC (ER)"
+                                              />
+                                              <p style="display: block;height:55px;">2016 4-Coin Gold American Eagle Set MS-70 NGC (ER)</p>
+                                              <p style="color:#ff5033;margin-top:0;">Melt + $225.00</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/70533" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/70533_Obv.jpg" width="175px;" alt="Russia 1/2 oz Palladium Ballerina BU (Random Year)" title="Russia 1/2 oz Palladium Ballerina BU (Random Year)"
+                                              />
+                                              <p style="display: block;height:55px;">Russia 1/2 oz Palladium Ballerina BU (Random Year)</p>
+                                              <p style="color:#ff5033;margin-top:0;">Melt + $80.00</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/63888" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/63888_Obv.jpg" width="175px;" alt="Russia 1 oz Palladium Ballerina BU (Random Year)" title="Russia 1 oz Palladium Ballerina BU (Random Year)"
+                                              />
+                                              <p style="display: block;height:55px;">Russia 1 oz Palladium Ballerina BU (Random Year)</p>
+                                              <p style="color:#ff5033;margin-top:0;">Spot + $85.00</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/4" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/4_Slab.jpg" width="175px;" alt="1/10 oz Gold American Eagle BU (Random Year)" title="1/10 oz Gold American Eagle BU (Random Year)"
+                                              />
+                                              <p style="display: block;height:55px;">1/10 oz Gold American Eagle BU (Random Year)</p>
+                                              <p style="color:#ff5033;margin-top:0;">Melt + 8.50%</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                      <table>
+                                        <tr style="border-bottom:solid 1px #f0f0f0;">
+                                          <td align="center">
+                                            <a href="https://wholesale.apmex.com/product/93892" style="color:#666666;">
+                                              <img style="display: block;" src="http://www.images-apmex.com/handlers/ThumbJpeg.ashx?VFilePath=~/Resources/Catalog%20Images/Products/93892_Slab.jpg" width="175px;" alt="2015-W 1 oz Prf Platinum American Eagle PR-70 PCGS (First Strike)" title="2015-W 1 oz Prf Platinum American Eagle PR-70 PCGS (First Strike)"
+                                              />
+                                              <p style="display: block;height:55px;">2015-W 1 oz Prf Platinum American Eagle PR-70 PCGS (First Strike)</p>
+                                              <p style="color:#ff5033;margin-top:0;">$2750.00</p>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr style="border-bottom:solid 1px #f0f0f0;">
+            <td align="center" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top">
+                      <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                        <tbody>
+                          <tr>
+                            <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                              <table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
+                                      <p style="margin-top:0;">Contact our Wholesale Trading Department</p>
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" width="50%">
+                                              <p style="font-size: 14px;"><a href="mailto:wholesaletrading@apmex.com" style="color:#0099cc;">General Desk</a></p>
+                                              <p style="font-size: 14px;"><a href="mailto:Jeffrey.Lubinski@apmex.com" style="color:#0099cc;">Jeff Lubinski</a></p>
+                                              <p style="font-size: 14px;"><a href="mailto:Lyle.Walters@apmex.com" style="color:#0099cc;">Lyle Walters</a></p>
+                                              <p style="font-size: 14px;"><a href="mailto:Cory.Nicholson@apmex.com" style="color:#0099cc;">Cory Nicholson</a></p>
+                                              <p style="font-size: 14px;"><a href="mailto:Edward.Patchen@apmex.com" style="color:#0099cc;">Ed Patchen</a></p>
+                                              <p style="font-size: 14px;"><a href="mailto:doug.bivins@apmex.com" style="color:#0099cc;">Doug Bivins</a></p>
+                                            </td>
+                                            <td align="center" width="50%">
+                                              <p style="font-size: 14px;">(888) 518-7605</p>
+                                              <p style="font-size: 14px;">(405) 595-5433</p>
+                                              <p style="font-size: 14px;">(405) 595-5421</p>
+                                              <p style="font-size: 14px;">(405) 595-2189</p>
+                                              <p style="font-size: 14px;">(405) 595-2131</p>
+                                              <p style="font-size: 14px;">(405) 595-2124</p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </td>
+          </tr>
+
+        </table>
+
+        <table border="0" cellpadding="0" cellspacing="0" width="500" id="emailFooter">
+          <tr>
+            <td align="center" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                      <tr>
+                        <td align="center" valign="top" width="500" class="flexibleContainerCell" style="" padding-top:20px;>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+  </center>
+</body>
+
+</html>
